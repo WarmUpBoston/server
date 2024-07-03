@@ -1,0 +1,37 @@
+services:
+  synapse_db:
+    image: "postgres:16-alpine"
+    environment:
+      - "POSTGRES_USER=synapse"
+      - "POSTGRES_PASSWORD=MATRIX_POSTGRES_PASSWORD"
+      - "POSTGRES_INITDB_ARGS=--encoding=UTF-8 --lc-collate=C --lc-ctype=C"
+    restart: "unless-stopped"
+    volumes:
+      - "/home/wub-member-13/opt/matrix/schemas:/var/lib/postgresql/data"
+  synapse:
+    build: .
+    depends_on:
+      - "synapse_db"
+    environment:
+      - "SYNAPSE_CONFIG_PATH=/setup/homeserver.yaml"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.synapse.rule=Host(`chat.warmupboston.org`)"
+      - "traefik.http.routers.synapse.entryPoints=web"
+      - "traefik.http.middlewares.limit.buffering.maxRequestBodyBytes=20000000"
+    restart: "unless-stopped"
+    volumes:
+      - "/home/wub-member-13/opt/matrix/data:/data"
+      - "/home/wub-member-13/opt/matrix/setup:/setup"
+  synapse_traefik:
+    image: "traefik:latest"
+    command:
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      - "80:80"
+    restart: "unless-stopped"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
