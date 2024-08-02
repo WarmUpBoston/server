@@ -30,7 +30,6 @@ You should see the following:
 
 Click on `Create Account`, which should take you to this screen:
 
-
 <img width="573" src="https://github.com/user-attachments/assets/97940767-6016-476c-8a50-39f63861609e">
 <br/>
 <br/>
