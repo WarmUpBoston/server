@@ -98,3 +98,5 @@ somewhere safe, like in a password manager (such as Bitwarden).
 ### Across multiple devices or apps
 
 ### Between two users
+
+## How can I make messages disappear a certain amount of time after being sent?
