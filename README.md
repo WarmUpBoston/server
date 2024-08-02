@@ -46,15 +46,20 @@ enter the username and password you would like to use.
 
 I would recommend generating a secure password and storing it in a password
 manager (I'd recommend [Bitwarden](https://bitwarden.com/) as a good free option,
-if you don't already have one). Click `Continue`; you should be prompted to
-enter your Registration Token. Do so, and then click `Continue`.
+if you don't already have one). Click `Continue`.
+
+<img width="573" src="/images/faq-4.png">
+<br/>
+<br/>
+
+You should be prompted to enter your Registration Token. Do so, and then click `Continue`.
 
 A message should appear which prompts you set up Secure Backup. This will provide
 you with a key which will allow you to read previously sent or received messages
 that are end-to-end encrypted when logging in on another device or logging
 back in after logging out on this device.
 
-<img width="573" src="/images/faq-4.png">
+<img width="573" src="/images/faq-5.png">
 <br/>
 <br/>
 
@@ -65,14 +70,14 @@ If you don't receive the prompt to set up Secure Backup upon initially logging i
 set it up by clicking the gear icon in the bottom left of the screen and clicking
 `All settings`:
 
-<img width="573" src="/images/faq-5.png">
+<img width="573" src="/images/faq-6.png">
 <br/>
 <br/>
 
 Then clicking on `Security & Privacy` on the left hand side of the pop up window,
 and clicking `Set up` under `Encryption > Secure Backup`:
 
-<img width="573" src="/images/faq-6.png">
+<img width="573" src="/images/faq-7.png">
 <br/>
 <br/>
 
