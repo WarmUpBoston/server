@@ -42,9 +42,9 @@ I would recommend generating a secure password and storing it in a password
 manager (I'd recommend [Bitwarden](https://bitwarden.com/) as a good free option,
 if you don't already have one). Click `Continue`.
 
-<img width="573" src="/images/faq-4.png">
-
 You should be prompted to enter your Registration Token. Do so, and then click `Continue`.
+
+<img width="573" src="/images/faq-4.png">
 
 A message should appear which prompts you set up Secure Backup. This will provide
 you with a key which will allow you to read previously sent or received messages
