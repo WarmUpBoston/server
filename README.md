@@ -25,21 +25,15 @@ Navigate to the [Element web app](https://app.element.io) in your web browser.
 You should see the following:
 
 <img width="573" src="/images/faq-1.png">
-<br/>
-<br/>
 
 Click on `Create Account`, which should take you to this screen:
 
 <img width="573" src="/images/faq-2.png">
-<br/>
-<br/>
 
 Click `Edit` under `Host account on`, on the right hand side, which should
 open this pop-up: 
 
 <img width="573" src="/images/faq-3.png">
-<br/>
-<br/>
 
 Select `Other homeserver`, and type in `https://chat.warmupboston.org`. Then,
 enter the username and password you would like to use.
@@ -49,8 +43,6 @@ manager (I'd recommend [Bitwarden](https://bitwarden.com/) as a good free option
 if you don't already have one). Click `Continue`.
 
 <img width="573" src="/images/faq-4.png">
-<br/>
-<br/>
 
 You should be prompted to enter your Registration Token. Do so, and then click `Continue`.
 
@@ -60,8 +52,6 @@ that are end-to-end encrypted when logging in on another device or logging
 back in after logging out on this device.
 
 <img width="573" src="/images/faq-5.png">
-<br/>
-<br/>
 
 Select `Generate a Security Key` and click `Continue`. Store the generated key
 somewhere safe, like in a password manager (such as Bitwarden).
@@ -71,15 +61,11 @@ set it up by clicking the gear icon in the bottom left of the screen and clickin
 `All settings`:
 
 <img width="573" src="/images/faq-6.png">
-<br/>
-<br/>
 
 Then clicking on `Security & Privacy` on the left hand side of the pop up window,
 and clicking `Set up` under `Encryption > Secure Backup`:
 
 <img width="573" src="/images/faq-7.png">
-<br/>
-<br/>
 
 Then, follow the instructions above.
 
