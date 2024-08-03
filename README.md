@@ -118,7 +118,15 @@ heading, then click on `Explore rooms`.
 
 Unfortunately, user bios are
 [not currently a feature](https://github.com/matrix-org/matrix-spec-proposals/issues/3795)
-of Matrix.
+of Matrix. Feel free to put useful information about yourself, such as pronouns,
+after your display name by clicking your profile picture in the top left, and
+clicking `All Settings`:
+
+<img width="573" src="/images/faq-11.png">
+
+Then edit the value in the `Display Name` box:
+
+<img width="573" src="/images/faq-12.png">
 
 ## What does it mean to verify a session?
 
@@ -147,11 +155,11 @@ To open the developer tools, type `/devtools` into the chatbox at the bottom
 of the screen in the Room for which you would like to set the retention policy
 (where it says `Send an encrypted message...`), then hit `Enter` twice.
 
-<img width="573" src="/images/faq-11.png">
+<img width="573" src="/images/faq-13.png">
 
 Click `Send custom timeline event` under the `Room` heading. 
 
-<img width="573" src="/images/faq-12.png">
+<img width="573" src="/images/faq-14.png">
 
 Enter `m.room.retention` in the box labeled `Event Type`, and enter the
 following in the box labeled `Event Content`:
@@ -162,7 +170,7 @@ following in the box labeled `Event Content`:
 }
 ```
 
-<img width="573" src="/images/faq-13.png">
+<img width="573" src="/images/faq-15.png">
 
 Replace `7` with the number of days messages should be kept before
 being deleted, then click the `Send` button.
