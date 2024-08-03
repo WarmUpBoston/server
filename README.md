@@ -118,13 +118,32 @@ heading, then click on `Explore rooms`.
 
 Unfortunately, user bios are
 [not currently a feature](https://github.com/matrix-org/matrix-spec-proposals/issues/3795)
-of Matrix.
+of Matrix. Feel free to put useful information about yourself, such as pronouns,
+after your display name by clicking your profile picture in the top left, and
+clicking `All Settings`:
+
+<img width="573" src="/images/faq-11.png">
+
+Then edit the value in the `Display Name` box:
+
+<img width="573" src="/images/faq-12.png">
 
 ## What does it mean to verify a session?
 
+Verifying a session is a way of proving that you are the same person when
+logging in on a new device or app. Sessions can also be verified between two
+users by exchanging information in person or over another communication channel
+to prove that they are who they say they are on the Matrix server.
+
 ### Across multiple devices or apps
 
+For instructions on verifying a session on a new device or in a new app, see
+[the Element documentation](https://ems-docs.element.io/books/element-cloud-documentation/page/verify-new-login#bkmrk-scan-qr-code-on-anot).
+
 ### Between two users
+
+For instructions on device verification between two users, see page 6 of
+[the Element user guide](https://static.element.io/pdfs/element-user-guide.pdf).
 
 ## How can I make messages in a Room disappear a certain amount of time after being sent?
 
@@ -136,11 +155,11 @@ To open the developer tools, type `/devtools` into the chatbox at the bottom
 of the screen in the Room for which you would like to set the retention policy
 (where it says `Send an encrypted message...`), then hit `Enter` twice.
 
-<img width="573" src="/images/faq-11.png">
+<img width="573" src="/images/faq-13.png">
 
 Click `Send custom timeline event` under the `Room` heading. 
 
-<img width="573" src="/images/faq-12.png">
+<img width="573" src="/images/faq-14.png">
 
 Enter `m.room.retention` in the box labeled `Event Type`, and enter the
 following in the box labeled `Event Content`:
@@ -151,7 +170,7 @@ following in the box labeled `Event Content`:
 }
 ```
 
-<img width="573" src="/images/faq-13.png">
+<img width="573" src="/images/faq-15.png">
 
 Replace `7` with the number of days messages should be kept before
 being deleted, then click the `Send` button.
