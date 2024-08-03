@@ -151,7 +151,7 @@ following in the box labeled `Event Content`:
 }
 ```
 
-<img width="573" src="/images/faq-12.png">
+<img width="573" src="/images/faq-13.png">
 
 Replace `7` with the number of days messages should be kept before
 being deleted, then click the `Send` button.
