@@ -6,6 +6,24 @@ Element's [web](https://app.element.io),
 [iOS](https://apps.apple.com/app/vector/id1083446067), and
 [Android](https://play.google.com/store/apps/details?id=im.vector.app) apps.
 
+## Can I sign in with my existing Matrix or Element account?
+
+Because we are self-hosting the server and have disabled
+[federation](https://element.io/features/closed-federation-and-open-federation),
+which is the feature that allows users to have one account for multiple
+servers, you will need to create an account specifically for this
+Matrix server.
+
+## Can I sign into another Matrix or Element account and remain signed into this Matrix server?
+
+Unfortunately, there is
+[currently no way](https://github.com/element-hq/roadmap/issues/11) to sign into
+multiple Matrix accounts in any Element app.
+
+If you need to log in to multiple Matrix accounts, you can install multiple
+different [Matrix clients](https://matrix.org/ecosystem/clients/)
+and use one for this server, and one for the other account.
+
 ## How do I create an account?
 
 ### On a smartphone
@@ -71,11 +89,36 @@ Then, follow the instructions above.
 
 ## How is the Matrix server organized?
 
-## How can I find Rooms that I'm not already in?
+"Room" is the Matrix term for what other platforms might call a channel or chatroom.
+A "Space" is a group of Rooms, where things like the list of members can be managed
+all together at the Space level.
+
+Spaces that you are in appear at the top left of the screen in the Element web app,
+below your profile picture. DMs with other users appear to the right of the Spaces
+under the `People` heading, and Rooms you are in appear below that under the `Rooms`
+heading.
+
+<img width="573" src="/images/faq-8.png">
+
+## How can I find Spaces or Rooms that I'm not already in?
+
+To find a Space, in the Element web app, in the top left of the screen, below the
+icons for the Spaces you are already in, click on the `+` button, and click
+`Search for public spaces`.
+
+<img width="573" src="/images/faq-9.png">
+
+To find Rooms within a Space, first select the Space on the left hand side of the
+screen, and then to the right of that, click the `+` button next to the `Rooms`
+heading, then click on `Explore rooms`.
+
+<img width="573" src="/images/faq-10.png">
 
 ## Can I create a bio for my account?
 
-## Can I sign into another Element account and remain signed into this Matrix server?
+Unfortunately, user bios are
+[not currently a feature](https://github.com/matrix-org/matrix-spec-proposals/issues/3795)
+of Matrix.
 
 ## What does it mean to verify a session?
 
@@ -83,4 +126,32 @@ Then, follow the instructions above.
 
 ### Between two users
 
-## How can I make messages disappear a certain amount of time after being sent?
+## How can I make messages in a Room disappear a certain amount of time after being sent?
+
+Currently, there is no UI for setting the retention policy (the period of time
+after which messages will be deleted, if any) for a Room, but it is possible to
+do so using the developer tools. You will need to be an Admin for the Room.
+
+To open the developer tools, type `/devtools` into the chatbox at the bottom
+of the screen in the Room for which you would like to set the retention policy
+(where it says `Send an encrypted message...`), then hit `Enter` twice.
+
+<img width="573" src="/images/faq-11.png">
+
+Click `Send custom timeline event` under the `Room` heading. 
+
+<img width="573" src="/images/faq-12.png">
+
+Enter `m.room.retention` in the box labeled `Event Type`, and enter the
+following in the box labeled `Event Content`:
+
+```json
+{
+  "max_lifetime": "7d"
+}
+```
+
+<img width="573" src="/images/faq-12.png">
+
+Replace `7` with the number of days messages should be kept before
+being deleted, then click the `Send` button.
