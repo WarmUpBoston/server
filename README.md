@@ -42,16 +42,16 @@ Navigate to the [Element web app](https://app.element.io) in your web browser.
 
 You should see the following:
 
-<img width="573" src="/images/faq-1.png">
+<img width="573" src="/images/faq-001.png">
 
 Click on `Create Account`, which should take you to this screen:
 
-<img width="573" src="/images/faq-2.png">
+<img width="573" src="/images/faq-002.png">
 
 Click `Edit` under `Host account on`, on the right hand side, which should
 open this pop-up: 
 
-<img width="573" src="/images/faq-3.png">
+<img width="573" src="/images/faq-003.png">
 
 Select `Other homeserver`, and type in `https://chat.warmupboston.org`. Then,
 enter the username and password you would like to use.
@@ -62,14 +62,14 @@ if you don't already have one). Click `Continue`.
 
 You should be prompted to enter your Registration Token. Do so, and then click `Continue`.
 
-<img width="573" src="/images/faq-4.png">
+<img width="573" src="/images/faq-004.png">
 
 A message should appear which prompts you set up Secure Backup. This will provide
 you with a key which will allow you to read previously sent or received messages
 that are end-to-end encrypted when logging in on another device or logging
 back in after logging out on this device.
 
-<img width="573" src="/images/faq-5.png">
+<img width="573" src="/images/faq-005.png">
 
 Select `Generate a Security Key` and click `Continue`. Store the generated key
 somewhere safe, like in a password manager (such as Bitwarden).
@@ -78,12 +78,12 @@ If you don't receive the prompt to set up Secure Backup upon initially logging i
 set it up by clicking the gear icon in the bottom left of the screen and clicking
 `All settings`:
 
-<img width="573" src="/images/faq-6.png">
+<img width="573" src="/images/faq-006.png">
 
 Then clicking on `Security & Privacy` on the left hand side of the pop up window,
 and clicking `Set up` under `Encryption > Secure Backup`:
 
-<img width="573" src="/images/faq-7.png">
+<img width="573" src="/images/faq-007.png">
 
 Then, follow the instructions above.
 
@@ -98,7 +98,7 @@ below your profile picture. DMs with other users appear to the right of the Spac
 under the `People` heading, and Rooms you are in appear below that under the `Rooms`
 heading.
 
-<img width="573" src="/images/faq-8.png">
+<img width="573" src="/images/faq-008.png">
 
 ## How can I find Spaces or Rooms that I'm not already in?
 
@@ -106,13 +106,13 @@ To find a Space, in the Element web app, in the top left of the screen, below th
 icons for the Spaces you are already in, click on the `+` button, and click
 `Search for public spaces`.
 
-<img width="573" src="/images/faq-9.png">
+<img width="573" src="/images/faq-009.png">
 
 To find Rooms within a Space, first select the Space on the left hand side of the
 screen, and then to the right of that, click the `+` button next to the `Rooms`
 heading, then click on `Explore rooms`.
 
-<img width="573" src="/images/faq-10.png">
+<img width="573" src="/images/faq-010.png">
 
 ## Can I create a bio for my account?
 
@@ -122,11 +122,11 @@ of Matrix. Feel free to put useful information about yourself, such as pronouns,
 after your display name by clicking your profile picture in the top left, and
 clicking `All Settings`:
 
-<img width="573" src="/images/faq-11.png">
+<img width="573" src="/images/faq-011.png">
 
 Then edit the value in the `Display Name` box:
 
-<img width="573" src="/images/faq-12.png">
+<img width="573" src="/images/faq-012.png">
 
 ## What does it mean to verify a session?
 
@@ -155,11 +155,11 @@ To open the developer tools, type `/devtools` into the chatbox at the bottom
 of the screen in the Room for which you would like to set the retention policy
 (where it says `Send an encrypted message...`), then hit `Enter` twice.
 
-<img width="573" src="/images/faq-13.png">
+<img width="573" src="/images/faq-013.png">
 
 Click `Send custom timeline event` under the `Room` heading. 
 
-<img width="573" src="/images/faq-14.png">
+<img width="573" src="/images/faq-014.png">
 
 Enter `m.room.retention` in the box labeled `Event Type`, and enter the
 following in the box labeled `Event Content`:
@@ -170,7 +170,7 @@ following in the box labeled `Event Content`:
 }
 ```
 
-<img width="573" src="/images/faq-15.png">
+<img width="573" src="/images/faq-015.png">
 
 Replace `7` with the number of days messages should be kept before
 being deleted, then click the `Send` button.
