@@ -122,9 +122,20 @@ of Matrix.
 
 ## What does it mean to verify a session?
 
+Verifying a session is a way of proving that you are the same person when
+logging in on a new device or app. Sessions can also be verified between two
+users by exchanging information in person or over another communication channel
+to prove that they are who they say they are on the Matrix server.
+
 ### Across multiple devices or apps
 
+For instructions on verifying a session on a new device or in a new app, see
+[the Element documentation](https://ems-docs.element.io/books/element-cloud-documentation/page/verify-new-login#bkmrk-scan-qr-code-on-anot).
+
 ### Between two users
+
+For instructions on device verification between two users, see page 6 of
+[the Element user guide](https://static.element.io/pdfs/element-user-guide.pdf).
 
 ## How can I make messages in a Room disappear a certain amount of time after being sent?
 
