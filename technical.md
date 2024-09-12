@@ -60,10 +60,10 @@ Set up some directory structure for Synapse and clone this repository locally:
 
 ```bash
 mkdir -p ~/opt/matrix/data
-chmod 777 ~/opt/matrix/data
+chmod -R 777 ~/opt/matrix/data
 cd ~/opt/matrix
 git clone https://github.com/WarmUpBoston/tech.git setup
-chmod 777 setup
+chmod -R 777 setup
 cd setup
 ```
 
